@@ -1,0 +1,59 @@
+
+stages:
+  - test
+  - package
+  - deploy
+  - release
+
+variables:
+  chartname: roundcube
+
+lint:
+  stage: test
+  image:
+    name: alpine/helm
+    entrypoint: [""]
+  script:
+    - helm version
+    - helm dependency update
+    - helm lint . -f values.lint.yaml
+
+package:
+  stage: package
+  image:
+    name: alpine/helm
+    entrypoint: [""]
+  rules:
+    - if: '$CI_COMMIT_TAG != null'
+  script:
+    - helm dependency update
+    - helm package --version ${CI_COMMIT_TAG:1} .
+  artifacts:
+    paths:
+      - "*.tgz"
+    expire_in: 1 year
+
+upload to repo:
+  stage: deploy
+  image: alpine
+  tags:
+    - owner=mlohr
+  rules:
+    - if: '$CI_COMMIT_TAG != null'
+  before_script:
+    - apk --no-cache add lftp
+  script:
+    - lftp -e "open $FTP_HOST; user $FTP_USERNAME $FTP_PASSWORD; put -O "${chartname}/" "${chartname}-${CI_COMMIT_TAG:1}.tgz"; bye"
+
+create release:
+  image: registry.gitlab.com/gitlab-org/release-cli:v0.15.0
+  stage: release
+  rules:
+    - if: '$CI_COMMIT_TAG != null'
+      when: manual
+  script:
+    - >
+      release-cli create --name $CI_COMMIT_TAG --description "# Changelog$(cat CHANGELOG.md | awk '/## '$CI_COMMIT_TAG'/{flag=1;next}/##/{flag=0}flag')"
+      --tag-name $CI_COMMIT_TAG --ref $CI_COMMIT_SHA
+      --assets-link "{\"name\": \"${chartname}-${CI_COMMIT_TAG:1}.tgz\", \"url\": \"https://helm-charts.mlohr.com/${chartname}/${chartname}-${CI_COMMIT_TAG:1}.tgz\", \"link_type\": \"package\"}"
+      --assets-link "{\"name\": \"${chartname}-${CI_COMMIT_TAG:1}.tgz.prov\", \"url\": \"https://helm-charts.mlohr.com/${chartname}/${chartname}-${CI_COMMIT_TAG:1}.tgz.prov\", \"link_type\": \"other\"}"

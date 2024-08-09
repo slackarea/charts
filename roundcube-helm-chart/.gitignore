@@ -1,0 +1,6 @@
+/charts/
+values.*.yaml
+*.tgz
+*.tgz.prov
+
+!/values.lint.yaml
