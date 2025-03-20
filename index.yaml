@@ -1,0 +1,37 @@
+apiVersion: v1
+entries:
+  roundcube:
+  - annotations:
+      artifacthub.io/license: GPL-3.0
+      artifacthub.io/signKey: |
+        fingerprint: 10F12F911D681AFFE80556E6F85268B2C4F95831
+        url: https://keys.openpgp.org/vks/v1/by-fingerprint/10F12F911D681AFFE80556E6F85268B2C4F95831
+    apiVersion: v2
+    appVersion: v1.6.10
+    created: "2025-03-20T08:24:31.286728+01:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      version: 2.*
+    description: Community Helm Chart for Roundcube
+    digest: a8dab0a3426cb78e92802e5b0954fa7f6c67d5229becc6a18b80a48ee81a3fd9
+    icon: https://gitlab.com/MatthiasLohr/roundcube-helm-chart/-/raw/main/roundcube-logo.png
+    keywords:
+    - roundcube
+    - roundcubemail
+    - webmail
+    - ispconfig
+    maintainers:
+    - email: vincenzo@ingrosso.net
+      name: Vincenzo Ingrosso
+      url: https://www.ingrosso.net/
+    name: roundcube
+    sources:
+    - https://github.com/slackarea/charts/tree/main/roundcube-helm-chart
+    - https://github.com/roundcube/roundcubemail-docker
+    - https://github.com/roundcube/roundcubemail
+    type: application
+    urls:
+    - rouncube-ispconfig/roundcube-1.6.10.tgz
+    version: 0.0.0
+generated: "2025-03-20T08:24:31.284664+01:00"
