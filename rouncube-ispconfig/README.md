@@ -7,7 +7,7 @@ This Helm chart allows for an easy install of [Roundcube webmail client](https:/
 ### Add Helm Repository
 
 ```
-helm repo add vcnngr https://slackarea.github.io/charts/  
+helm repo add vcnngr https://slackarea.github.io/charts/ 
 helm repo update
 ```
 
@@ -48,7 +48,7 @@ persistence:
 ### Install to Kubernetes
 
 ```bash
-helm install roundcube vcnngr/roundcube-ispconfig -f values.yaml
+helm upgarde --install roundcube vcnngr/roundcube -f values.yaml
 ```
 
 
