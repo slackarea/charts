@@ -1,0 +1,58 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+// Personalizzazioni per il tema hacker
+body {
+  font-family: 'Courier New', monospace;
+  line-height: 1.6;
+}
+
+// Personalizza i link
+a {
+  color: #00ff00;
+  text-decoration: none;
+  
+  &:hover {
+    color: #00cc00;
+    text-decoration: underline;
+  }
+}
+
+// Stile per i titoli
+h1, h2, h3 {
+  color: #00ff00;
+  text-shadow: 0 0 10px #00ff00;
+}
+
+// Personalizza i blocchi di codice
+pre {
+  background: #000;
+  border: 1px solid #00ff00;
+  border-radius: 5px;
+  padding: 15px;
+  overflow-x: auto;
+}
+
+// Effetto terminale per i paragrafi
+p {
+  margin-bottom: 1em;
+}
+
+// Personalizza la navigazione se hai aggiunto menu
+.navigation {
+  text-align: center;
+  margin: 20px 0;
+  
+  a {
+    margin: 0 15px;
+    padding: 5px 10px;
+    border: 1px solid #00ff00;
+    
+    &:hover {
+      background: #00ff00;
+      color: #000;
+    }
+  }
+}
