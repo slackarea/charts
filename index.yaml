@@ -3,13 +3,13 @@ entries:
   agentic-rag:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-07-07T19:15:59.060433+02:00"
+    created: "2025-07-08T09:35:50.644915+02:00"
     description: A Helm chart for Agentic RAG Knowledge Graph application
     digest: 26453110abe44f17cac370bb103138eb6dfa656a10e98a6f2e5327feea84b53a
     name: agentic-rag
     type: application
     urls:
-    - https://github.com/slackarea/charts/agentic-rag/agentic-rag-1.0.0.tgz
+    - agentic-rag/agentic-rag-1.0.0.tgz
     version: 1.0.0
   roundcube:
   - annotations:
@@ -19,7 +19,7 @@ entries:
         url: https://keys.openpgp.org/vks/v1/by-fingerprint/10F12F911D681AFFE80556E6F85268B2C4F95831
     apiVersion: v2
     appVersion: v1.6.10
-    created: "2025-07-07T19:15:59.062523+02:00"
+    created: "2025-07-08T09:35:50.648074+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -43,18 +43,18 @@ entries:
     - https://github.com/roundcube/roundcubemail
     type: application
     urls:
-    - https://github.com/slackarea/charts/rouncube-ispconfig/roundcube-1.6.10.tgz
+    - rouncube-ispconfig/roundcube-1.6.10.tgz
     version: 0.0.0
   telegram-rebot:
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2025-07-07T19:15:59.063851+02:00"
+    created: "2025-07-08T09:35:50.648688+02:00"
     description: Telegram bot intermedio che dialoga con un bot pubblico simulando
       un utente.
     digest: bea86ba22a167f846b51c8e160fef9fbae9eb8e23272c9c86939dd4aca29373d
     name: telegram-rebot
     type: application
     urls:
-    - https://github.com/slackarea/charts/telegram-rebot/telegram-rebot-1.0.0.tgz
+    - telegram-rebot/telegram-rebot-1.0.0.tgz
     version: 1.0.0
-generated: "2025-07-07T19:15:59.059018+02:00"
+generated: "2025-07-08T09:35:50.643375+02:00"
