@@ -3,7 +3,7 @@ entries:
   agentic-rag:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-07-26T23:59:35.403573+02:00"
+    created: "2025-07-27T01:15:42.401151+02:00"
     description: A Helm chart for Agentic RAG Knowledge Graph application
     digest: 26453110abe44f17cac370bb103138eb6dfa656a10e98a6f2e5327feea84b53a
     name: agentic-rag
@@ -19,7 +19,7 @@ entries:
         url: https://keys.openpgp.org/vks/v1/by-fingerprint/10F12F911D681AFFE80556E6F85268B2C4F95831
     apiVersion: v2
     appVersion: v1.6.10
-    created: "2025-07-26T23:59:35.411655+02:00"
+    created: "2025-07-27T01:15:42.405612+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -46,11 +46,16 @@ entries:
     - rouncube-ispconfig/roundcube-1.6.10.tgz
     version: 0.0.0
   simple-prima-nota:
-  - apiVersion: v2
+  - annotations:
+      artifacthub.io/license: GPL-3.0
+      artifacthub.io/signKey: |
+        fingerprint: 10F12F911D681AFFE80556E6F85268B2C4F95831
+        url: https://keys.openpgp.org/vks/v1/by-fingerprint/10F12F911D681AFFE80556E6F85268B2C4F95831
+    apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-07-26T23:59:35.413225+02:00"
+    created: "2025-07-27T01:15:42.409758+02:00"
     description: A Helm chart for Prima Nota application
-    digest: 1ed45a7407be82511417f06f603b8a03f8a9d74eb4d4e7db4f27950d990b35ea
+    digest: 89640d74ef60ef4ad263e0456ad40697e04dd75c84c49152620ba5be5261e345
     home: https://github.com/vcnngr/simple-prima-nota
     keywords:
     - prima-nota
@@ -68,7 +73,7 @@ entries:
   telegram-rebot:
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2025-07-26T23:59:35.414138+02:00"
+    created: "2025-07-27T01:15:42.410792+02:00"
     description: Telegram bot intermedio che dialoga con un bot pubblico simulando
       un utente.
     digest: bea86ba22a167f846b51c8e160fef9fbae9eb8e23272c9c86939dd4aca29373d
@@ -77,4 +82,4 @@ entries:
     urls:
     - telegram-rebot/telegram-rebot-1.0.0.tgz
     version: 1.0.0
-generated: "2025-07-26T23:59:35.400312+02:00"
+generated: "2025-07-27T01:15:42.398837+02:00"
