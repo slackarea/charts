@@ -3,13 +3,13 @@ entries:
   agentic-rag:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-07-27T01:15:42.401151+02:00"
+    created: "2025-07-27T10:29:45.647511+02:00"
     description: A Helm chart for Agentic RAG Knowledge Graph application
     digest: 26453110abe44f17cac370bb103138eb6dfa656a10e98a6f2e5327feea84b53a
     name: agentic-rag
     type: application
     urls:
-    - agentic-rag/agentic-rag-1.0.0.tgz
+    - https://slackarea.github.io/charts/agentic-rag/agentic-rag-1.0.0.tgz
     version: 1.0.0
   roundcube:
   - annotations:
@@ -19,7 +19,7 @@ entries:
         url: https://keys.openpgp.org/vks/v1/by-fingerprint/10F12F911D681AFFE80556E6F85268B2C4F95831
     apiVersion: v2
     appVersion: v1.6.10
-    created: "2025-07-27T01:15:42.405612+02:00"
+    created: "2025-07-27T10:29:45.65168+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -43,9 +43,28 @@ entries:
     - https://github.com/roundcube/roundcubemail
     type: application
     urls:
-    - rouncube-ispconfig/roundcube-1.6.10.tgz
+    - https://slackarea.github.io/charts/rouncube-ispconfig/roundcube-1.6.10.tgz
     version: 0.0.0
   simple-prima-nota:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2025-07-27T10:29:45.656157+02:00"
+    description: A Helm chart for Prima Nota application
+    digest: d14e1c0d1aa7daa52ca73a50046cbdb56f6f4f24e4b7f9920b55156796d50d8e
+    home: https://github.com/vcnngr/simple-prima-nota
+    keywords:
+    - prima-nota
+    - postgresql
+    - react
+    - nodejs
+    maintainers:
+    - email: vincenzo@ingrosso.net
+      name: Vincenzo Ingrosso
+    name: simple-prima-nota
+    type: application
+    urls:
+    - https://slackarea.github.io/charts/simple-prima-nota/simple-prima-nota-0.1.1.tgz
+    version: 0.1.1
   - annotations:
       artifacthub.io/license: GPL-3.0
       artifacthub.io/signKey: |
@@ -53,7 +72,7 @@ entries:
         url: https://keys.openpgp.org/vks/v1/by-fingerprint/10F12F911D681AFFE80556E6F85268B2C4F95831
     apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-07-27T01:15:42.409758+02:00"
+    created: "2025-07-27T10:29:45.65371+02:00"
     description: A Helm chart for Prima Nota application
     digest: 89640d74ef60ef4ad263e0456ad40697e04dd75c84c49152620ba5be5261e345
     home: https://github.com/vcnngr/simple-prima-nota
@@ -68,18 +87,18 @@ entries:
     name: simple-prima-nota
     type: application
     urls:
-    - simple-prima-nota/simple-prima-nota-0.1.0.tgz
+    - https://slackarea.github.io/charts/simple-prima-nota/simple-prima-nota-0.1.0.tgz
     version: 0.1.0
   telegram-rebot:
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2025-07-27T01:15:42.410792+02:00"
+    created: "2025-07-27T10:29:45.657282+02:00"
     description: Telegram bot intermedio che dialoga con un bot pubblico simulando
       un utente.
     digest: bea86ba22a167f846b51c8e160fef9fbae9eb8e23272c9c86939dd4aca29373d
     name: telegram-rebot
     type: application
     urls:
-    - telegram-rebot/telegram-rebot-1.0.0.tgz
+    - https://slackarea.github.io/charts/telegram-rebot/telegram-rebot-1.0.0.tgz
     version: 1.0.0
-generated: "2025-07-27T01:15:42.398837+02:00"
+generated: "2025-07-27T10:29:45.644074+02:00"
