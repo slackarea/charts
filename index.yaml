@@ -3,7 +3,7 @@ entries:
   agentic-rag:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-08-02T10:21:37.055895+02:00"
+    created: "2025-08-02T11:22:14.723878+02:00"
     description: A Helm chart for Agentic RAG Knowledge Graph application
     digest: 26453110abe44f17cac370bb103138eb6dfa656a10e98a6f2e5327feea84b53a
     name: agentic-rag
@@ -19,7 +19,7 @@ entries:
         url: https://keys.openpgp.org/vks/v1/by-fingerprint/10F12F911D681AFFE80556E6F85268B2C4F95831
     apiVersion: v2
     appVersion: v1.6.10
-    created: "2025-08-02T10:21:37.058193+02:00"
+    created: "2025-08-02T11:22:14.727783+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -48,7 +48,17 @@ entries:
   simple-prima-nota:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-08-02T10:21:37.064645+02:00"
+    created: "2025-08-02T11:22:14.733175+02:00"
+    description: Chart Helm per applicazione Prima Nota
+    digest: 47f0d86f5d66798a5884999cb200b92803ed4722b91ee1f746fd305045c9039e
+    name: simple-prima-nota
+    type: application
+    urls:
+    - https://slackarea.github.io/charts/simple-prima-nota/simple-prima-nota-0.3.1.tgz
+    version: 0.3.1
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2025-08-02T11:22:14.732304+02:00"
     description: Chart Helm per applicazione Prima Nota
     digest: d68a8f192222ff4bb3322df539e7eb8f6832f43a7b69a16cc398db35e3e79223
     name: simple-prima-nota
@@ -58,7 +68,7 @@ entries:
     version: 0.3.0
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-08-02T10:21:37.063339+02:00"
+    created: "2025-08-02T11:22:14.73107+02:00"
     description: A Helm chart for Prima Nota application
     digest: bbcfa5dc8ea1ca7e29cdedc49abe90acef442e6e3c36cf330f705e7a7468ac77
     home: https://github.com/vcnngr/simple-prima-nota
@@ -77,7 +87,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-08-02T10:21:37.060639+02:00"
+    created: "2025-08-02T11:22:14.730078+02:00"
     description: A Helm chart for Prima Nota application
     digest: d14e1c0d1aa7daa52ca73a50046cbdb56f6f4f24e4b7f9920b55156796d50d8e
     home: https://github.com/vcnngr/simple-prima-nota
@@ -101,7 +111,7 @@ entries:
         url: https://keys.openpgp.org/vks/v1/by-fingerprint/10F12F911D681AFFE80556E6F85268B2C4F95831
     apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-08-02T10:21:37.059437+02:00"
+    created: "2025-08-02T11:22:14.728927+02:00"
     description: A Helm chart for Prima Nota application
     digest: 89640d74ef60ef4ad263e0456ad40697e04dd75c84c49152620ba5be5261e345
     home: https://github.com/vcnngr/simple-prima-nota
@@ -121,7 +131,7 @@ entries:
   telegram-rebot:
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2025-08-02T10:21:37.065127+02:00"
+    created: "2025-08-02T11:22:14.733656+02:00"
     description: Telegram bot intermedio che dialoga con un bot pubblico simulando
       un utente.
     digest: bea86ba22a167f846b51c8e160fef9fbae9eb8e23272c9c86939dd4aca29373d
@@ -130,4 +140,4 @@ entries:
     urls:
     - https://slackarea.github.io/charts/telegram-rebot/telegram-rebot-1.0.0.tgz
     version: 1.0.0
-generated: "2025-08-02T10:21:37.050768+02:00"
+generated: "2025-08-02T11:22:14.721967+02:00"
