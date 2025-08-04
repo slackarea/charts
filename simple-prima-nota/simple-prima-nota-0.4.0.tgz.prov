@@ -1,0 +1,29 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+apiVersion: v2
+appVersion: 1.0.0
+description: Chart Helm per applicazione Prima Nota
+name: simple-prima-nota
+type: application
+version: 0.4.0
+
+...
+files:
+  simple-prima-nota-0.4.0.tgz: sha256:8cba12913370aef569db634378a756d7e8f71882521bd37ee48751716f3cb0d3
+-----BEGIN PGP SIGNATURE-----
+
+wsFcBAEBCgAQBQJokPVXCRD4UmiyxPlYMQAAgCsQAIES2pZ+e8TNhe4FrKneTsdG
+6j6w4/86ggovVXh9bUoEyyBFzuY03aTYVCNfUqnbMCzkZ1ba+TXb8zQgnUUEBleV
+U2at/eovZQ7vVQBoQmtlHJzXGwuH6de4DKofgyjjE13i3gx5+GuSPRZjaT5eeNC+
+lvlxIhagkp4ckgJoViRoAtftyj06Xy6QxDpdaaoLge+vgNUIP1jBU+NZtd6mD+1n
+5jIty7xmHLZNXz55q0V5ZpU8msb+7dXX4M1rHj4AVXnwpIS9AJXaW0TtSzfEbIEu
+h8Kz3vbIdF6Xt+awVJXmZ9l33jOAtxZ6Eu+bJqQzRN5CkeyxUtNgqV3ogReR0deR
+yJLuFTK8dvrfvT/aFTiXQYhBuzL1S9zB/1OMmcylnRhmdFPpTu5BPh4PoKcUaVjW
+uKHnt7GOnwdA6O7HPsQ7MoJwOWeKN6Esr+BWb/EQ+MqQCFQ8Xwwa972ueSKL/+vz
+jzK6zZ6I1AJlQbLFP6C5g7rpctyRroP7j0/NIC305h6NsT/Aeg9KPKICm8Vwh0Pz
+N3g1v58J+l1UI/lSgJkz+wWYq7lLaE5/V4OquaGiUhIyyIy8dON9HhDrfVNqF6sm
+I62RqySbBn2JuZKMHW7KA3irrA92Fzi/QpA4twAYfjoUDJ6bIydPwRUJRReyfM/s
+Y4ViHjWWfU6pD4wKZx0G
+=YUgI
+-----END PGP SIGNATURE-----
