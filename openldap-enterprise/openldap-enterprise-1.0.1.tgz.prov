@@ -1,0 +1,52 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+annotations:
+  artifacthub.io/license: GPL-3.0
+  artifacthub.io/signKey: |
+    fingerprint: 10F12F911D681AFFE80556E6F85268B2C4F95831
+    url: https://keys.openpgp.org/vks/v1/by-fingerprint/10F12F911D681AFFE80556E6F85268B2C4F95831
+apiVersion: v2
+appVersion: "2.6"
+dependencies:
+- - name: common
+  repository: oci://registry-1.docker.io/bitnamicharts
+  version: 2.x.x
+- - condition: phpldapadmin.enabled
+  name: phpldapadmin
+  repository: https://roertel.github.io/helm-charts
+  version: 0.1.4-2
+description: A truly enterprise-ready OpenLDAP Helm chart, independent and robust.
+home: https://www.openldap.org/
+icon: https://bitnami.com/assets/stacks/openldap/img/openldap-stack-220x234.png
+keywords:
+- - ldap
+- - openldap
+- - directory
+- - authentication
+- - enterprise
+name: openldap-enterprise
+sources:
+- - https://github.com/bitnami/containers/tree/main/bitnami/openldap
+type: application
+version: 1.0.1
+
+...
+files:
+  openldap-enterprise-1.0.1.tgz: sha256:f68f8348900fb2cfd981242630a0fe5ede007a43097475a93e09d1918d779218
+-----BEGIN PGP SIGNATURE-----
+
+wsFcBAEBCgAQBQJo2B0GCRD4UmiyxPlYMQAA2ooQAHcuM5+HtHt5LME3eKj8HEmK
+FpmAy15gzNx4+K0bQ6A7hcSgm4dGcSYIbEisyQ7XHmZf4BJ8N/i/cNKtODSW4T2A
+oiz9y8TBae+yY3bbyBFloYISd+9RArWtPogABPUL/5CRe64BEKvj6K9AxJsUe/SA
+j7Xe8U1bOop/yFq0AZsl9Dsgw56qPD6mJiMp6x9tKYu0Bm5u+Be7L1/bMY/5zEV1
+1XT4le+nNlcUe3V4NkY23MQN8kwk7yx2+k1QEYyo1gwUq3je/F1IUhtFJA2tg+lg
+7uaUfSbOZrimDZkxILtE7wS6R7B0Qz7gYmc0MyC7aP3HNIsd0MXKx7sHhudRA7zp
+BQInJ67dTl8wNypd6INF63QG21XfZQL5hgdGNXHepYeREuQ5PjZ2vD44J/nuj65q
+o1+dyV5uZkMflrFYsipXQ1EVG0nz/uNxovL+qN82czFtjCRHWJ3uGf3SqZM532l8
+/t2/p+ylz7blwtx11XYReA+93zH6frVNElSL274g0AEb9R6vsVjeJohNl/0eGsHt
+cDFzP4gh9Bqquh6fPC7u60cBimWCp2Qhqa5JSGgfXvvzNkJ1ljG39oVwKpvx8Wu4
+g2GVzXmMmI769Ve6MicY7CVZvsQd5qEnQHVHP+BLbCqMPUBvJlL3nbTeVObISnB4
+yxdun8lYjz7pw7LuW/ek
+=kNUX
+-----END PGP SIGNATURE-----
