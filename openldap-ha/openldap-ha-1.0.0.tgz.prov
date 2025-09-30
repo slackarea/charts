@@ -1,0 +1,48 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+annotations:
+  artifacthub.io/license: GPL-3.0
+  artifacthub.io/signKey: |
+    fingerprint: 10F12F911D681AFFE80556E6F85268B2C4F95831
+    url: https://keys.openpgp.org/vks/v1/by-fingerprint/10F12F911D681AFFE80556E6F85268B2C4F95831
+  category: Database
+apiVersion: v2
+appVersion: 1.5.0
+description: High Availability OpenLDAP deployment with multi-master replication
+home: https://www.openldap.org/
+icon: https://bitnami.com/assets/stacks/openldap/img/openldap-stack-220x234.png
+keywords:
+- - openldap
+- - ldap
+- - directory
+- - authentication
+- - high-availability
+maintainers:
+- - email: vincenzo@ingrosso.net
+  name: vcnngr
+name: openldap-ha
+sources:
+- - https://github.com/osixia/docker-openldap
+type: application
+version: 1.0.0
+
+...
+files:
+  openldap-ha-1.0.0.tgz: sha256:523c831f46df6ebfea39acf3f5d0c43ed2239e47a60f8348f1071a377a647af4
+-----BEGIN PGP SIGNATURE-----
+
+wsFcBAEBCgAQBQJo252UCRD4UmiyxPlYMQAA42wQADXUUgL1jaUew7PVabY6Xa7F
+d4xbwFuelQ8jrQhkGuzeMSOHFROSYqFdUmUQghZNLnS+pKCaERJQQ+T5DTkKENXw
+xo+Smzfh0FXhNVNuc/P3/sDeKyD4CVIpjrclj3UoeZ5Yw/3QR85jxj8IoyiZEMpD
+AHWqBJhoDw1YHFsLMYKdr9thN/4qlwjgBSGb2vFr6lKRjyw6RvQFHDhTKFcGnSA/
+wbxedoF6Un2FkjaGGe7xtkwc6NZyyjrX4DS4kCu6zf8MHFxDyt1retG/ZqTwfWp6
+n7xuK/MbryVwdxzV85/Gdv8XXCAcvUVDzPMQhF5LnvBDitnAjx3FhhdgNUDPsuOf
+UyFFdvmnaxsN+HzPiY6zBZ1kynsm0Pmt+3JWWykF7CXXch3xRRwRVRpjMR90faBv
+53S7GE335M0uN1k6WgW7zRtTwnkbSjvuV3aTl1g6PhafxdRdv0m2RlDQTP/Vtj2T
+aUaG7EmtKJQRaqYvbTNgMAn2ElEP1mI0k4Zzy43SdSZzXvAGCyG9CHAxNRi57U5r
+LycNia+d9ot9/LfZED1fU1LAVBxjlt0aaDm4YXiBkAXZ9UHvs3Jfyy2Y/tzoFGLk
+Tp3fyVJetGL1PMwkYZx8Ny/garYbVyNeBz3VBrOZ8eQsTsDl5TeEXs9PueEA8bbf
+GJAlIvIGGfPN2aeCzq5Q
+=RfzQ
+-----END PGP SIGNATURE-----

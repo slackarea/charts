@@ -3,7 +3,7 @@ entries:
   agentic-rag:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-09-27T19:21:33.196076+02:00"
+    created: "2025-09-30T11:12:06.927037+02:00"
     description: A Helm chart for Agentic RAG Knowledge Graph application
     digest: 26453110abe44f17cac370bb103138eb6dfa656a10e98a6f2e5327feea84b53a
     name: agentic-rag
@@ -11,72 +11,35 @@ entries:
     urls:
     - https://slackarea.github.io/charts/agentic-rag/agentic-rag-1.0.0.tgz
     version: 1.0.0
-  openldap-enterprise:
+  openldap-ha:
   - annotations:
       artifacthub.io/license: GPL-3.0
       artifacthub.io/signKey: |
         fingerprint: 10F12F911D681AFFE80556E6F85268B2C4F95831
         url: https://keys.openpgp.org/vks/v1/by-fingerprint/10F12F911D681AFFE80556E6F85268B2C4F95831
+      category: Database
     apiVersion: v2
-    appVersion: "2.6"
-    created: "2025-09-27T19:21:33.212499+02:00"
-    dependencies:
-    - name: common
-      repository: oci://registry-1.docker.io/bitnamicharts
-      version: 2.x.x
-    - condition: phpldapadmin.enabled
-      name: phpldapadmin
-      repository: https://roertel.github.io/helm-charts
-      version: 0.1.4-2
-    description: A truly enterprise-ready OpenLDAP Helm chart, independent and robust.
-    digest: f68f8348900fb2cfd981242630a0fe5ede007a43097475a93e09d1918d779218
+    appVersion: 1.5.0
+    created: "2025-09-30T11:12:06.92967+02:00"
+    description: High Availability OpenLDAP deployment with multi-master replication
+    digest: 523c831f46df6ebfea39acf3f5d0c43ed2239e47a60f8348f1071a377a647af4
     home: https://www.openldap.org/
     icon: https://bitnami.com/assets/stacks/openldap/img/openldap-stack-220x234.png
     keywords:
-    - ldap
     - openldap
+    - ldap
     - directory
     - authentication
-    - enterprise
-    name: openldap-enterprise
+    - high-availability
+    maintainers:
+    - email: vincenzo@ingrosso.net
+      name: vcnngr
+    name: openldap-ha
     sources:
-    - https://github.com/bitnami/containers/tree/main/bitnami/openldap
+    - https://github.com/osixia/docker-openldap
     type: application
     urls:
-    - https://slackarea.github.io/charts/openldap-enterprise/openldap-enterprise-1.0.1.tgz
-    version: 1.0.1
-  - annotations:
-      artifacthub.io/license: GPL-3.0
-      artifacthub.io/signKey: |
-        fingerprint: 10F12F911D681AFFE80556E6F85268B2C4F95831
-        url: https://keys.openpgp.org/vks/v1/by-fingerprint/10F12F911D681AFFE80556E6F85268B2C4F95831
-    apiVersion: v2
-    appVersion: "2.6"
-    created: "2025-09-27T19:21:33.205654+02:00"
-    dependencies:
-    - name: common
-      repository: oci://registry-1.docker.io/bitnamicharts
-      version: 2.x.x
-    - condition: phpldapadmin.enabled
-      name: phpldapadmin
-      repository: https://roertel.github.io/helm-charts
-      version: 0.1.4-2
-    description: A truly enterprise-ready OpenLDAP Helm chart, independent and robust.
-    digest: 4a02e42f19d2f3f7fcc32a3ef1fc1abb25ab3f73f42d1ba79ca8e8eccb60fc3f
-    home: https://www.openldap.org/
-    icon: https://bitnami.com/assets/stacks/openldap/img/openldap-stack-220x234.png
-    keywords:
-    - ldap
-    - openldap
-    - directory
-    - authentication
-    - enterprise
-    name: openldap-enterprise
-    sources:
-    - https://github.com/bitnami/containers/tree/main/bitnami/openldap
-    type: application
-    urls:
-    - https://slackarea.github.io/charts/openldap-enterprise/openldap-enterprise-1.0.0.tgz
+    - https://slackarea.github.io/charts/openldap-ha/openldap-ha-1.0.0.tgz
     version: 1.0.0
   roundcube:
   - annotations:
@@ -86,7 +49,7 @@ entries:
         url: https://keys.openpgp.org/vks/v1/by-fingerprint/10F12F911D681AFFE80556E6F85268B2C4F95831
     apiVersion: v2
     appVersion: v1.6.10
-    created: "2025-09-27T19:21:33.217753+02:00"
+    created: "2025-09-30T11:12:06.932978+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -115,7 +78,7 @@ entries:
   simple-prima-nota:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-09-27T19:21:33.253748+02:00"
+    created: "2025-09-30T11:12:06.950065+02:00"
     description: Chart Helm per applicazione Prima Nota
     digest: 487dcc39e219529c34aa3211892ed2764e00aad6db5dc366fbe24a876313fa3e
     name: simple-prima-nota
@@ -125,7 +88,7 @@ entries:
     version: 0.5.3
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-09-27T19:21:33.251063+02:00"
+    created: "2025-09-30T11:12:06.948059+02:00"
     description: Chart Helm per applicazione Prima Nota
     digest: df31698c045ec3060aec8d9506e0629151582db00094b6762b8f7071b4209075
     name: simple-prima-nota
@@ -135,7 +98,7 @@ entries:
     version: 0.5.2
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-09-27T19:21:33.248334+02:00"
+    created: "2025-09-30T11:12:06.946242+02:00"
     description: Chart Helm per applicazione Prima Nota
     digest: 8cba12913370aef569db634378a756d7e8f71882521bd37ee48751716f3cb0d3
     name: simple-prima-nota
@@ -145,7 +108,7 @@ entries:
     version: 0.4.0
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-09-27T19:21:33.244072+02:00"
+    created: "2025-09-30T11:12:06.944677+02:00"
     description: Chart Helm per applicazione Prima Nota
     digest: 5e0cada505e69bc5d11fb6059ca1611f6d6049d4636c3bb44395a50de4960ee5
     name: simple-prima-nota
@@ -155,7 +118,7 @@ entries:
     version: 0.3.5
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-09-27T19:21:33.240765+02:00"
+    created: "2025-09-30T11:12:06.943566+02:00"
     description: Chart Helm per applicazione Prima Nota
     digest: fc594e455a71604486fbe92318be46a5a746fd4238077d20b619cc400e682438
     name: simple-prima-nota
@@ -165,7 +128,7 @@ entries:
     version: 0.3.4
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-09-27T19:21:33.238315+02:00"
+    created: "2025-09-30T11:12:06.942346+02:00"
     description: Chart Helm per applicazione Prima Nota
     digest: fa7afd100bbfa9147ba1b2351e019f821406ff254ab78fa338072ff846fef2ec
     name: simple-prima-nota
@@ -175,7 +138,7 @@ entries:
     version: 0.3.3
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-09-27T19:21:33.235781+02:00"
+    created: "2025-09-30T11:12:06.940119+02:00"
     description: Chart Helm per applicazione Prima Nota
     digest: e2b232f574e9e34e7bd67dab20c5f9e5568e2bbfd0a1940ffb9d7c5c22698f18
     name: simple-prima-nota
@@ -185,7 +148,7 @@ entries:
     version: 0.3.2
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-09-27T19:21:33.233508+02:00"
+    created: "2025-09-30T11:12:06.938995+02:00"
     description: Chart Helm per applicazione Prima Nota
     digest: 47f0d86f5d66798a5884999cb200b92803ed4722b91ee1f746fd305045c9039e
     name: simple-prima-nota
@@ -195,7 +158,7 @@ entries:
     version: 0.3.1
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-09-27T19:21:33.231031+02:00"
+    created: "2025-09-30T11:12:06.937834+02:00"
     description: Chart Helm per applicazione Prima Nota
     digest: d68a8f192222ff4bb3322df539e7eb8f6832f43a7b69a16cc398db35e3e79223
     name: simple-prima-nota
@@ -205,7 +168,7 @@ entries:
     version: 0.3.0
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-09-27T19:21:33.228029+02:00"
+    created: "2025-09-30T11:12:06.936422+02:00"
     description: A Helm chart for Prima Nota application
     digest: bbcfa5dc8ea1ca7e29cdedc49abe90acef442e6e3c36cf330f705e7a7468ac77
     home: https://github.com/vcnngr/simple-prima-nota
@@ -224,7 +187,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-09-27T19:21:33.222364+02:00"
+    created: "2025-09-30T11:12:06.935347+02:00"
     description: A Helm chart for Prima Nota application
     digest: d14e1c0d1aa7daa52ca73a50046cbdb56f6f4f24e4b7f9920b55156796d50d8e
     home: https://github.com/vcnngr/simple-prima-nota
@@ -248,7 +211,7 @@ entries:
         url: https://keys.openpgp.org/vks/v1/by-fingerprint/10F12F911D681AFFE80556E6F85268B2C4F95831
     apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-09-27T19:21:33.219903+02:00"
+    created: "2025-09-30T11:12:06.934091+02:00"
     description: A Helm chart for Prima Nota application
     digest: 89640d74ef60ef4ad263e0456ad40697e04dd75c84c49152620ba5be5261e345
     home: https://github.com/vcnngr/simple-prima-nota
@@ -268,7 +231,7 @@ entries:
   telegram-rebot:
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2025-09-27T19:21:33.254683+02:00"
+    created: "2025-09-30T11:12:06.950592+02:00"
     description: Telegram bot intermedio che dialoga con un bot pubblico simulando
       un utente.
     digest: bea86ba22a167f846b51c8e160fef9fbae9eb8e23272c9c86939dd4aca29373d
@@ -277,4 +240,4 @@ entries:
     urls:
     - https://slackarea.github.io/charts/telegram-rebot/telegram-rebot-1.0.0.tgz
     version: 1.0.0
-generated: "2025-09-27T19:21:33.193616+02:00"
+generated: "2025-09-30T11:12:06.925871+02:00"
