@@ -1,0 +1,66 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+annotations:
+  artifacthub.io/license: Apache-2.0
+  artifacthub.io/links: |
+    - name: Documentation
+      url: https://doc.evolution-api.com
+    - name: GitHub
+      url: https://github.com/EvolutionAPI/evolution-api
+apiVersion: v2
+appVersion: 2.0.0
+dependencies:
+- - condition: postgresql.enabled
+  name: postgresql
+  repository: https://charts.bitnami.com/bitnami
+  version: ~14.0
+- - condition: redis.enabled
+  name: redis
+  repository: https://charts.bitnami.com/bitnami
+  version: ~18.0
+- - condition: rabbitmqCluster.enabled
+  name: rabbitmq
+  repository: https://charts.bitnami.com/bitnami
+  version: ~14.0
+- - condition: kafkaCluster.enabled
+  name: kafka
+  repository: https://charts.bitnami.com/bitnami
+  version: ~30.0
+description: A Helm chart for Evolution API - WhatsApp integration platform
+home: https://github.com/EvolutionAPI/evolution-api
+icon: https://raw.githubusercontent.com/EvolutionAPI/evolution-api/main/docs/images/evolution-api-logo.png
+keywords:
+- - whatsapp
+- - api
+- - messaging
+- - evolution-api
+- - chat
+maintainers:
+- - email: vincenzo@vcnngr.it
+  name: Vincenzo Ingrosso
+name: evolution-api
+sources:
+- - https://github.com/EvolutionAPI/evolution-api
+type: application
+version: 1.0.0
+
+...
+files:
+  evolution-api-1.0.0.tgz: sha256:4396cfdeb0edb7ea71a9b0e42a2ad3b9d69469934bec6a7694ec4f5b5589b645
+-----BEGIN PGP SIGNATURE-----
+
+wsFcBAEBCgAQBQJpcx7kCRD4UmiyxPlYMQAAoU0QACargf7ltVGyKF/51yC/vH7I
+YI3IggJY9ReLhNKzZCNxsCDh01/jfJXbExqycd31ch3bTEZQEfPDwBrvVSBijeU8
+kQ0HOE2CxdqJO9wYIf9MEk5L7EPKuGAB/Z5PcOhVgekg2NNje7lBfpYe21222OjP
+9f9t6dzHesD7WBhewkJJSj/2oCgwL9w38v5lVOqL2rIlimCQS9fVBlxYo7Rxlji4
+7jXejBeKZpDtvFCf7cKucYdL5VBUcNZZU5rkeikj1idCFyLAJNbUUZdV3bBjkdTO
+So7Q2ZFtuhVRJVt5JZiGu6e54/uC8t2oAxoIAkr5INPvZW5ofJ1UN7DcRVfsIhIK
+FzoED1Z5hGGAYq2iQERu0x50zbYD/I4FBO//Y8QNOJikwwwzWRVRsePZMiQkIvj/
+sMD/q3JCec/2MxZmEBFdM3ICS3VuMTKUYATB6oFxRFD8BsWiN84dxZIfV0jEnp2c
+vOGu2Aw8LNkaAKYN8b4F+BlWyybJtO/WMVMa573iGQ7MgtyGTbYBT3ZqQb4j4dzi
+7XOrAp34zXWf5pIoHNncXO4wIqRv300f9ryyFS3CRzOhuZcZk3rSWykJwgkwLe2A
+s9RS1INGK1/hgUnNA7zxJ50YTBB/4/RMfuVAGVeuSqYP1RXv160Mjt4Io9VtEVi7
+3TUAp4GcYF3NqJzfTiwu
+=yQhF
+-----END PGP SIGNATURE-----
